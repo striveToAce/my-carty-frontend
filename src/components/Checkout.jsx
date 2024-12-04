@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import axios from '../services/apiService';
+import axios from 'axios';
 
-const Checkout = () => {
+export const Checkout = () => {
   const [cartSummary, setCartSummary] = useState({});
   const [discountCode, setDiscountCode] = useState('');
 
@@ -39,5 +39,3 @@ const Checkout = () => {
     </div>
   );
 };
-
-export default Checkout;
